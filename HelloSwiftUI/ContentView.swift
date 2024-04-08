@@ -15,35 +15,6 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Slider(value: $sliderValue, in: 0...1)
-                .tint(.red)
-            
-            
-            Stepper("값 \(value)", value: $value, in: 0...10)
-            
-            Toggle("Toggle message on/off", isOn: $isOn).padding(20)
-            
-            Text("위")
-                .background(Color.orange).padding(.vertical, 4.0)
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .foregroundColor(.white)
-            HStack {
-                Text("왼쪽")
-                Text("오른쪽")
-            }
-            ZStack {
-                Text("배경")
-                Text("전경")
-            }
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                print("Button1 click!")
-            }
-            Button(action: {
-                print("Button2 click!")
-            }, label: {
-                Text("button")
-            })
         }
         .background(.brown)
     }
