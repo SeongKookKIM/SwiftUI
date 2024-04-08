@@ -14,33 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            let myString = "Displays a string variable"
-            Text("Hello World, \(myString)")
-            Text("This is my age \(myString). Since I am retired This is my age \(myString). Since I am retired This is my age \(myString). Since I am retired")
-                .multilineTextAlignment(.leading)
-                .lineLimit(3)
-                .truncationMode(.tail)
-            
-            Spacer(minLength: 10)
-            
-            Text("Bold Text")
-                .font(.title)
-                .bold()
-            
-            Text("italic")
-                .font(.title2)
-                .italic()
-            Text("UnderLined")
-                .font(.headline)
-                .underline()
-            Text("StrikeTrough")
-                .font(.subheadline)
-                .strikethrough()
-            Text("Custom Font Text")
-                .font(.custom("AmericanTypewriter" , size: 24))
-            Text("Line Spacing\n Second")
-                .font(.body)
-                .lineSpacing(50)
+         
         }
     }
 }
