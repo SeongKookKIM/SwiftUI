@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isOn = true
+    @State private var value = 0
+    @State private var sliderValue = 0.5
+    
     var body: some View {
         VStack {
+            
+            Slider(value: $sliderValue, in: 0...1)
+                .tint(.red)
+            
+            
+            Stepper("값 \(value)", value: $value, in: 0...10)
+            
+            Toggle("Toggle message on/off", isOn: $isOn).padding(20)
+            
             Text("위")
+                .background(Color.orange).padding(.vertical, 4.0)
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
             HStack {
                 Text("왼쪽")
                 Text("오른쪽")
@@ -28,6 +45,7 @@ struct ContentView: View {
                 Text("button")
             })
         }
+        .background(.brown)
     }
 }
 
