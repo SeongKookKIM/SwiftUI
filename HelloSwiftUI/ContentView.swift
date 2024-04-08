@@ -14,16 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Label("Text",
-                  systemImage: "clock.circle").font(.title)
-            Label{
-                Text("No modifiers")
-            } icon: {
-                //Assets 이미지 파일 업로드
-                Image("clock-solid")
-                    .resizable()
-                    .frame(width: 20, height: 20)
-            }
+           
         }
     }
 }
