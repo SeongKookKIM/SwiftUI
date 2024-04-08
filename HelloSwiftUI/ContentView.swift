@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var sliderValue = 0.5
     
     var body: some View {
+        //세로 정렬
         VStack(alignment: .trailing, spacing: 24) {
             Text("Default padding of 16 ponint")
                 .padding(16)
@@ -23,15 +24,18 @@ struct ContentView: View {
             Text("Default padding of 3 ponint")
                 .padding(3)
                 .background(Color.yellow)
-            Text("Top padding Only")
-                .padding(.top)
-                .background(Color.yellow)
-            Text("Trail padding Only")
-                .padding(.trailing)
-                .background(Color.yellow)
-            Text("bottom padding Only")
-                .padding(.bottom)
-                .background(Color.yellow)
+            //가로 정렬
+            HStack (alignment: .bottom) {
+                Text("Top padding Only")
+                    .padding(.top)
+                    .background(Color.yellow)
+                Text("Trail padding Only")
+                    .padding(.trailing)
+                    .background(Color.yellow)
+                Text("bottom padding Only")
+                    .padding(.bottom)
+                    .background(Color.yellow)
+            }
             Text("leading padding Only")
                 .padding(.leading, 45)
                 .background(Color.yellow)
