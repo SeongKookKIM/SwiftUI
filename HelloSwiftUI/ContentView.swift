@@ -14,49 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         //세로 정렬
-        VStack(alignment: .trailing, spacing: 24) {
-            //padding 기본 16
-            Text("Default padding of 16 ponint")
-                .padding(16)
-                .background(Color.yellow)
-            Text("Default padding of 45 ponint")
-                .padding(45)
-                .background(Color.yellow)
-            Text("Default padding of 3 ponint")
-                .padding(3)
-                .background(Color.yellow)
+        VStack {
             
-            //간격 주기
-            Spacer()
-            
-            //가로 정렬
-            HStack (alignment: .bottom) {
-                Text("Top padding Only")
-                    .padding(.top)
-                    .background(Color.yellow)
-                Text("Trail padding Only")
-                    .padding(.trailing)
-                    .background(Color.yellow)
-                Text("bottom padding Only")
-                    .padding(.bottom)
-                    .background(Color.yellow)
-            }
-            //간격 주기
-            //            Spacer(minLength: 100)
-            Spacer()
-            
-            Text("leading padding Only")
-                .padding(.leading, 45)
-                .background(Color.yellow)
-            Text("Top, Leading padding")
-                .padding([.top,.leading], 45)
-                .background(Color.yellow)
-            Text("Top, Leading,bottom padding")
-                .padding([.top,.leading, .bottom], 45)
-                .background(Color.yellow)
-            Text("Top, Leading, bottom, Trail padding")
-                .padding(EdgeInsets(top: 20, leading: 30, bottom: 10, trailing: 60))
-                .background(Color.yellow)
         }
     }
 }
