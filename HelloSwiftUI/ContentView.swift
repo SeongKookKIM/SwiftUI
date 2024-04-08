@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         //세로 정렬
         VStack(alignment: .trailing, spacing: 24) {
+            //padding 기본 16
             Text("Default padding of 16 ponint")
                 .padding(16)
                 .background(Color.yellow)
@@ -24,6 +25,10 @@ struct ContentView: View {
             Text("Default padding of 3 ponint")
                 .padding(3)
                 .background(Color.yellow)
+            
+            //간격 주기
+            Spacer()
+            
             //가로 정렬
             HStack (alignment: .bottom) {
                 Text("Top padding Only")
@@ -36,6 +41,10 @@ struct ContentView: View {
                     .padding(.bottom)
                     .background(Color.yellow)
             }
+            //간격 주기
+            //            Spacer(minLength: 100)
+            Spacer()
+            
             Text("leading padding Only")
                 .padding(.leading, 45)
                 .background(Color.yellow)
