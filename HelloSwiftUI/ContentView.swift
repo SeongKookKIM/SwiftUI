@@ -10,12 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("위")
+            HStack {
+                Text("왼쪽")
+                Text("오른쪽")
+            }
+            ZStack {
+                Text("배경")
+                Text("전경")
+            }
+            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                print("Button1 click!")
+            }
+            Button(action: {
+                print("Button2 click!")
+            }, label: {
+                Text("button")
+            })
         }
-        .padding()
     }
 }
 
@@ -24,3 +36,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+/** IOS 17  부터 이 문법으로 바뀜...
+ #Preview {
+ ContentView()
+ }
+ **/
+
