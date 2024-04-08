@@ -8,13 +8,66 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isOn = true
-    @State private var value = 0
-    @State private var sliderValue = 0.5
-    
     var body: some View {
         VStack {
-         
+            /* 이미지 크기 조정
+             Image("sample_dog_square")
+             .resizable()
+             .frame(width: 250, height: 250)
+             .aspectRatio(contentMode: .fill)
+             
+             Image("sample_cat_square")
+             .resizable()
+             .frame(width: 250, height: 250)
+             .aspectRatio(contentMode: .fill)
+             .clipShape(Circle())
+             */
+            
+            /* 이미지 그림자 효과
+             Image("sample_dog_square")
+             .resizable()
+             .frame(width: 250, height: 250)
+             .aspectRatio(contentMode: .fill)
+             .shadow(color: .red, radius: 46, x:0, y:0)
+             
+             Image("sample_cat_square")
+             .resizable()
+             .frame(width: 250, height: 250)
+             .aspectRatio(contentMode: .fill)
+             .clipShape(Circle())
+             .shadow(color: .green, radius: 46, x: 90, y: 50)
+             */
+            
+            /* 이미지 테두리 효과
+             Image("sample_dog_square")
+             .resizable()
+             .frame(width: 250, height: 250)
+             .aspectRatio(contentMode: .fill)
+             .shadow(color: .red, radius: 46, x:0, y:0)
+             .overlay(Rectangle().stroke(Color.blue, lineWidth: 10))
+             
+             Image("sample_cat_square")
+             .resizable()
+             .frame(width: 250, height: 250)
+             .aspectRatio(contentMode: .fill)
+             .clipShape(Circle())
+             .shadow(color: .green, radius: 46, x: 90, y: 50)
+             .overlay(Circle().stroke(Color.purple, lineWidth: 20))
+             */
+            
+            // 이미지 투명도
+            Image("sample_dog_square")
+                .resizable()
+                .frame(width: 250, height: 250)
+                .aspectRatio(contentMode: .fill)
+                .opacity(0.75)
+            
+            Image("sample_cat_square")
+                .resizable()
+                .frame(width: 250, height: 250)
+                .aspectRatio(contentMode: .fill)
+                .clipShape(Circle())
+                .opacity(0.25)
         }
     }
 }
