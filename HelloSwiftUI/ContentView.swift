@@ -14,43 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            /* 도형
-             Capsule().fill(Color.yellow)
-             Circle().fill(Color.blue)
-             Ellipse().fill(Color.brown)
-             Rectangle().fill(Color.red)
-             RoundedRectangle(cornerRadius: 30).fill(Color.green)
-             
-             그라디언트
-             Spacer()
-             Ellipse().fill(RadialGradient(
-             gradient: Gradient(colors: [.blue,.yellow]),
-             center: .top,
-             startRadius: 10,
-             endRadius: 65
-             ))
-             */
-            
-            /* 글디언트
-             Spacer()
-             Ellipse().fill(RadialGradient(
-             gradient: Gradient(colors: [.blue,.yellow]),
-             center: .center,
-             startRadius: 10,
-             endRadius: 65
-             ))
-             Spacer()
-             Ellipse().fill(AngularGradient(
-             gradient: Gradient(colors: [.blue,.yellow]),
-             center: .center
-             ))
-             Spacer()
-             */
-            
-            // 이미지 커스텀 모드
-            Image(systemName: "tortoise.fill")
-            Image(systemName: "tortoise.fill").font(.title)
-            Image(systemName: "tortoise.fill").font(.custom("", size: 50))
+         
         }
     }
 }
