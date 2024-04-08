@@ -60,7 +60,9 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: 250, height: 250)
                 .aspectRatio(contentMode: .fill)
+                .shadow(color: Color(hue: 0.241, saturation: 0.389, brightness: 0.948), radius: 50, x: 0, y: 0)
                 .opacity(0.75)
+                
             
             Image("sample_cat_square")
                 .resizable()
