@@ -28,6 +28,9 @@ struct ContentView: View {
                     Text(myArray[index])
                 }
             }
+            List(myArray, id: \.self) { item in
+                Text(item)
+            }
         }
     }
 }
