@@ -38,6 +38,8 @@ struct ContentView: View {
                 Toggle(isOn: $flag, label: {
                     Text("Click me")
                 })
+                //True 시 비활성화
+                .disabled(flag)
             }
             
             GroupBox(label: Text("Group Box")) {
