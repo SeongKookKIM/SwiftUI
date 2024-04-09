@@ -15,14 +15,19 @@ struct ContentView: View {
                 .foregroundStyle(selectedColor)
                 .frame(width: 200)
                 .contextMenu {
-                    Button("빨강") { selectedColor = .red }
-                    Button("보라") { selectedColor = .purple }
-                    Button("녹색") { selectedColor = .green }
-                    Button("주황") { selectedColor = .orange }
+                    Button("빨강", action: {
+                        changeColor(color: .red)
+                    })
+                    Button("보라", action: {
+                        changeColor(color: .purple)
+                    })
                 }
             Text("색상 선택")
                 .padding()
         }
+    }
+    func changeColor(color: Color) {
+        selectedColor = color
     }
 }
 
