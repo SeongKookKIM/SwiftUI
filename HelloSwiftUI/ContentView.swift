@@ -11,7 +11,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-           
+           Text("Turtle Rock")
+                .padding()
+                .contextMenu {
+                    Button{
+                        
+                    } label: {
+                        Label("Add to Favoriate", systemImage: "heart")
+                    }
+                    Button{
+                        
+                    } label: {
+                        Label("Show in Maps", systemImage: "mappin")
+                    }
+                }
         }
     }
 }
