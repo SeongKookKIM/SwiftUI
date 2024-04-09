@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-
+    @State private var showAlet = false
     var body: some View {
         VStack {
-        
+            Button("Show Alert") {
+                showAlet.toggle()
+            }
+            .alert(isPresented: $showAlet, content: {
+                Alert(title: Text("Warning!"), message: Text("Zombies on the loose"), dismissButton: .default(Text("OK")))
+            })
         }
     }
 }
