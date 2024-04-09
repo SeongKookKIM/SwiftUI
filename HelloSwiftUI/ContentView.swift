@@ -8,25 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-        @State var text = "길게 눌러 확인"
+    @State private var selectedColor = Color.gray
     var body: some View {
         VStack {
-           Text("Turtle Rock")
-                .padding()
+           Rectangle()
+                .foregroundStyle(selectedColor)
+                .frame(width: 200)
                 .contextMenu {
-                    Button{
-                        text = "Favorite"
-                    } label: {
-                        Label("Add to Favoriate", systemImage: "heart")
-                    }
-                    Button{
-                        text = "Maps"
-                    } label: {
-                        Label("Show in Maps", systemImage: "mappin")
-                    }
+                    Button("빨강") { selectedColor = .red }
+                    Button("보라") { selectedColor = .purple }
+                    Button("녹색") { selectedColor = .green }
+                    Button("주황") { selectedColor = .orange }
                 }
-            
-            Text("\(text)")
+            Text("색상 선택")
+                .padding()
         }
     }
 }
