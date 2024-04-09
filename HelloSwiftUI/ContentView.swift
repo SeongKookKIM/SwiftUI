@@ -8,33 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var message = ""
+   
 
     var body: some View {
         VStack {
-            Link(destination: URL(string: "https://www.apple.com")!, label: {
-                Text("Apple")
-            })
-            
-            Text(message).padding()
-            
-            Menu("Options") {
-                Button("Open", action: openFile)
-                Button("Find", action: findFile)
-                Button("Delete...", action: deleteFile)
-            }
-            .menuStyle(DefaultMenuStyle())
-            .menuOrder(.fixed)
+         
         }
-    }
-    func openFile() {
-        message = "Open Chosen"
-    }
-    func findFile() {
-        message = "Find Chosen"
-    }
-    func deleteFile() {
-        message = "Delete Chosen"
     }
 }
 
