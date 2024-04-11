@@ -8,11 +8,20 @@
 import SwiftUI
 
 
+
+
+
 struct ContentView: View {
-   
     
     var body: some View {
         NavigationStack {
+            Text("Choose Heads or Tails")
+            NavigationLink(destination: FileView(choice: "Head")) {
+                Text("Send Message")
+            }
+            NavigationLink(destination: SeparateFile(passedData: "Tail")) {
+                Text("Tails")
+            }.navigationTitle("Flip a Coin")
             
         }
     }

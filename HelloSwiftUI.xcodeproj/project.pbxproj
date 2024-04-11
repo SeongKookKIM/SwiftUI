@@ -12,6 +12,7 @@
 		A65A59682BC37116000CB80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65A59672BC37116000CB80E /* Assets.xcassets */; };
 		A65A596B2BC37116000CB80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65A596A2BC37116000CB80E /* Preview Assets.xcassets */; };
 		A6F2F4792BC77D4B00C166EF /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2F4782BC77D4B00C166EF /* FileView.swift */; };
+		A6F2F47B2BC7865400C166EF /* SeparateFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2F47A2BC7865400C166EF /* SeparateFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A65A59672BC37116000CB80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65A596A2BC37116000CB80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6F2F4782BC77D4B00C166EF /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
+		A6F2F47A2BC7865400C166EF /* SeparateFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparateFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				A6F2F4782BC77D4B00C166EF /* FileView.swift */,
 				A65A59632BC37114000CB80E /* HelloSwiftUIApp.swift */,
 				A65A59652BC37114000CB80E /* ContentView.swift */,
+				A6F2F47A2BC7865400C166EF /* SeparateFile.swift */,
 				A65A59672BC37116000CB80E /* Assets.xcassets */,
 				A65A59692BC37116000CB80E /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				A6F2F4792BC77D4B00C166EF /* FileView.swift in Sources */,
 				A65A59662BC37114000CB80E /* ContentView.swift in Sources */,
+				A6F2F47B2BC7865400C166EF /* SeparateFile.swift in Sources */,
 				A65A59642BC37114000CB80E /* HelloSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

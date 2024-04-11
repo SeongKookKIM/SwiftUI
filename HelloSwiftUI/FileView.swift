@@ -10,10 +10,15 @@ import SwiftUI
 
 struct FileView: View {
     var choice: String
-    
     var body: some View {
-        VStack {
-            Text("선택 = \(choice)")
-        }
+        HStack {
+            Spacer()
+            VStack {
+                Spacer()
+                Text("you choose = \(choice)")
+                Spacer()
+            }
+            Spacer()
+        }.background(Color.yellow)
     }
 }
