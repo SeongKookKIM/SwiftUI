@@ -11,8 +11,10 @@ struct ContentView: View {
 
     
     var body: some View {
-        VStack {
-         
+        ScrollView(Axis.Set.vertical, showsIndicators: true) {
+            ForEach(0..<50) {
+                Text("Item #\($0)")
+            }
         }
     }
 }
