@@ -14,9 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            NavigationLink(destination:FileView(choice: "헤드") ) {
-                Text("헤드 선택")
-            }
+            
         }
     }
 }
