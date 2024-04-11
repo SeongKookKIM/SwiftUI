@@ -66,6 +66,8 @@ struct ContentView: View {
                     }.tag(6)
             }
             .tint(.red)
+            .tabViewStyle(.page) //Scroll
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always)) //Scroll UI
         }
         
     }
