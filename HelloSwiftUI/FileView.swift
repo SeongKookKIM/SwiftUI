@@ -9,13 +9,14 @@ import SwiftUI
 
 
 struct FileView: View {
-    var choice: String
+    @EnvironmentObject var choice: ShareString
     var body: some View {
         HStack {
             Spacer()
             VStack {
                 Spacer()
-                Text("you choose = \(choice)")
+                TextField("Type here", text: $choice.message)
+                Text("you choose = \(choice.message)")
                 Spacer()
             }
             Spacer()
