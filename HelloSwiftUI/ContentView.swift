@@ -42,6 +42,7 @@ struct ContentView: View {
                 .disabled(flag)
             }
             
+            
             GroupBox(label: Text("Group Box")) {
                 Text("This is a Group box")
                 Toggle(isOn: $flag, label: {
@@ -54,14 +55,16 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
 /** IOS 17  부터 이 문법으로 바뀜...
  #Preview {
  ContentView()
  }
  **/
-
+#Preview {
+ContentView()
+}
