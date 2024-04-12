@@ -11,9 +11,14 @@ import SwiftUI
 struct ContentView: View {
    
     var body: some View {
-        VStack {
-          
+        GeometryReader { geometry in
+            VStack {
+                Text("Width = \(geometry.size.width)")
+                Text("height = \(geometry.size.height)")
+            }
         }
+        .background(Color.yellow)
+//        .ignoresSafeArea() // 상단 다이나믹이일랜드
     }
 }
 
